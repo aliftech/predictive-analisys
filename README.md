@@ -17,52 +17,101 @@ Pinjaman bank adalah bagian integral dari kegiatan perbankan dan memiliki implik
 
 ## Business Understanding
 
-Pada bagian ini, kamu perlu menjelaskan proses klarifikasi masalah.
+Dalam industri perbankan, masalah prediksi status pinjaman adalah penting karena berdampak langsung pada keberhasilan operasional dan keuangan bank. Bank-bank menghadapi risiko kredit yang tinggi jika mereka memberikan pinjaman kepada individu yang tidak mampu membayar kembali pinjaman mereka. Di sisi lain, jika bank menolak aplikasi pinjaman tanpa alasan yang jelas, hal tersebut dapat menyebabkan kekecewaan pelanggan dan kehilangan potensi pendapatan.
+
+Oleh karena itu, ada kebutuhan yang mendesak untuk mengembangkan metode yang akurat dan efisien untuk memprediksi status pinjaman. Dengan menggunakan teknologi machine learning, bank dapat memanfaatkan data historis dan atribut peminjam untuk membangun model prediktif yang dapat membantu dalam pengambilan keputusan kredit yang lebih baik.
+
+Melalui analisis data yang teliti, bank dapat mengidentifikasi pola dan tren yang berkaitan dengan status pinjaman yang sukses atau gagal. Faktor-faktor seperti riwayat kredit, pendapatan, riwayat pekerjaan, aset, dan variabel lainnya dapat menjadi parameter penting dalam prediksi status pinjaman. Dengan membangun model yang tepat, bank dapat mengurangi risiko kredit, mengoptimalkan portofolio pinjaman mereka, dan memaksimalkan keuntungan.
+
+Selain itu, penggunaan teknologi machine learning juga memungkinkan bank untuk meningkatkan efisiensi operasional mereka. Proses manual yang memerlukan waktu dan sumber daya yang besar dapat digantikan dengan model prediktif yang dapat mengotomatisasi evaluasi aplikasi pinjaman. Hal ini memungkinkan bank untuk menangani volume pinjaman yang lebih besar dalam waktu yang lebih singkat, sambil tetap mempertahankan kualitas pengambilan keputusan.
+
+Dalam bisnis perbankan yang kompetitif, kemampuan untuk melakukan prediksi yang akurat dan cepat tentang status pinjaman memberikan keunggulan kompetitif. Bank yang dapat memberikan keputusan pinjaman yang cepat, akurat, dan adil kepada pelanggan akan membangun reputasi yang baik, menarik pelanggan baru, dan meningkatkan loyalitas pelanggan yang ada.
+
+Oleh karena itu, pemahaman bisnis yang baik tentang masalah prediksi status pinjaman adalah penting bagi bank-bank untuk mengidentifikasi kebutuhan mereka, meningkatkan proses pengambilan keputusan, dan mencapai tujuan keuangan mereka.
 
 Bagian laporan ini mencakup:
 
 ### Problem Statements
 
-Menjelaskan pernyataan masalah latar belakang:
+Beberapa tantangan yang perlu dipecahkan dalam masalah ini termasuk:
 
-- Pernyataan Masalah 1
-- Pernyataan Masalah 2
-- Pernyataan Masalah n
+- Keterbatasan manusia: Mengevaluasi setiap aplikasi pinjaman secara manual membutuhkan waktu dan sumber daya manusia yang besar. Proses ini rentan terhadap kesalahan dan dapat menghambat efisiensi operasional.
+
+- Kompleksitas faktor-faktor penentu: Pengambilan keputusan kredit yang akurat memerlukan pemahaman mendalam tentang faktor-faktor yang mempengaruhi kemampuan seseorang untuk membayar kembali pinjaman. Faktor seperti riwayat kredit, pendapatan, riwayat pekerjaan, aset, dan variabel lainnya harus dianalisis dengan cermat untuk membuat prediksi yang akurat.
+
+- Volume aplikasi yang tinggi: Dalam era digital, jumlah aplikasi pinjaman yang masuk ke bank meningkat secara signifikan. Menangani volume yang tinggi secara manual menjadi tidak memungkinkan dan memerlukan pendekatan yang otomatis dan efisien.
+
+- Risiko kredit: Salah satu risiko utama yang dihadapi oleh bank adalah gagal bayar pinjaman. Mengidentifikasi aplikasi yang berpotensi berisiko tinggi dan mengurangi risiko kredit menjadi sangat penting untuk menjaga stabilitas keuangan bank.
 
 ### Goals
 
-Menjelaskan tujuan dari pernyataan masalah:
+- Fokus pada area yang perlu diperbaiki: Dengan mengidentifikasi masalah dengan jelas, kita dapat menentukan area yang membutuhkan perhatian dan peningkatan. Hal ini membantu mengarahkan upaya dan sumber daya untuk memecahkan masalah yang paling penting dalam prediksi status pinjaman.
 
-- Jawaban pernyataan masalah 1
-- Jawaban pernyataan masalah 2
-- Jawaban pernyataan masalah n
+- Mengarahkan perancangan solusi: Pernyataan masalah membantu mengarahkan perancangan solusi yang sesuai. Dengan memahami masalah dengan baik, kita dapat merumuskan pendekatan, teknik, dan metode yang tepat untuk mengembangkan model prediktif yang akurat dan efisien.
 
-Semua poin di atas harus diuraikan dengan jelas. Anda bebas menuliskan berapa pernyataan masalah dan juga goals yang diinginkan.
+- Menentukan tujuan yang jelas: Pernyataan masalah membantu menetapkan tujuan yang jelas dalam pengembangan model prediktif. Tujuan ini dapat mencakup meningkatkan akurasi prediksi, mengurangi risiko kredit, mempercepat proses pengambilan keputusan, atau meningkatkan efisiensi operasional. Dengan menetapkan tujuan yang jelas, kita dapat mengukur keberhasilan solusi yang diusulkan.
+
+- Memotivasi penelitian dan pengembangan: Dengan merumuskan masalah dengan baik, kita dapat menghasilkan pemahaman yang lebih baik tentang urgensi dan pentingnya penelitian dan pengembangan solusi. Pernyataan masalah dapat menjadi landasan yang kuat untuk memotivasi upaya dalam mengembangkan model prediktif yang lebih baik dan lebih efisien.
 
 **Rubrik/Kriteria Tambahan (Opsional)**:
 
-- Menambahkan bagian “Solution Statement” yang menguraikan cara untuk meraih goals. Bagian ini dibuat dengan ketentuan sebagai berikut:
+- Untuk mencapai tujuan dalam prediksi status pinjaman dengan akurat dan efisien, kami mengusulkan solusi berikut:
 
   ### Solution statements
 
-  - Mengajukan 2 atau lebih solution statement. Misalnya, menggunakan dua atau lebih algoritma untuk mencapai solusi yang diinginkan atau melakukan improvement pada baseline model dengan hyperparameter tuning.
-  - Solusi yang diberikan harus dapat terukur dengan metrik evaluasi.
+  - Penggunaan Teknik Machine Learning: Kami akan menerapkan teknik machine learning yang canggih, seperti regresi logistik, pohon keputusan, atau algoritma klasifikasi lainnya, untuk membangun model prediktif. Dengan memanfaatkan kekuatan machine learning, model kami akan dapat mempelajari pola-pola kompleks dari data historis pinjaman dan mengidentifikasi faktor-faktor yang paling berpengaruh dalam menentukan keberhasilan pinjaman.
+
+  - Pengumpulan dan Analisis Data yang Komprehensif: Kami akan mengumpulkan data yang komprehensif tentang aplikasi pinjaman yang terverifikasi dan hasil status pinjaman dari peminjam sebelumnya. Data ini akan mencakup informasi seperti riwayat kredit, pendapatan, riwayat pekerjaan, aset, dan variabel lainnya yang relevan. Kami akan melakukan analisis mendalam terhadap data ini untuk mengidentifikasi pola dan tren yang berkaitan dengan status pinjaman yang sukses atau gagal.
+
+  - Pemrosesan dan Pembersihan Data yang Tepat: Sebelum melatih model, kami akan melakukan pemrosesan dan pembersihan data yang tepat. Hal ini mencakup penanganan nilai yang hilang atau tidak valid, penghapusan outlier yang signifikan, dan normalisasi atau standarisasi data untuk mengoptimalkan kinerja model.
+
+  - Validasi dan Evaluasi Model yang Teliti: Setelah melatih model, kami akan melakukan validasi dan evaluasi yang teliti terhadap kinerjanya. Kami akan membagi data menjadi subset pelatihan dan pengujian, dan menggunakan metrik evaluasi yang relevan seperti akurasi, presisi, recall, dan area di bawah kurva ROC untuk mengevaluasi kinerja model. Kami juga akan melakukan kros-validasi untuk mengukur robustness model terhadap data yang tidak terlihat sebelumnya.
+
+  - Integrasi dengan Sistem Perbankan: Solusi kami akan diintegrasikan dengan sistem perbankan yang ada untuk mendukung proses pengambilan keputusan pinjaman. Model prediktif akan digunakan secara otomatis untuk mengevaluasi dan memberikan rekomendasi persetujuan pinjaman yang aman. Hal ini akan meningkatkan efisiensi operasional dan mengurangi keterlibatan manusia dalam proses evaluasi.
 
 ## Data Understanding
 
-Paragraf awal bagian ini menjelaskan informasi mengenai data yang Anda gunakan dalam proyek. Sertakan juga sumber atau tautan untuk mengunduh dataset. Contoh: [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/Restaurant+%26+consumer+data).
-
-Selanjutnya uraikanlah seluruh variabel atau fitur pada data. Sebagai contoh:
+Dataset yang digunakan merupakan dataset Bank Loan Status yang diperoleh dari situs kaggle. Berikut merupakan link untuk mendownload dataset [Bank Loan Status Dataset](https://www.kaggle.com/datasets/zaurbegiev/my-dataset?select=credit_train.csv).
 
 ### Variabel-variabel pada Restaurant UCI dataset adalah sebagai berikut:
 
-- accepts : merupakan jenis pembayaran yang diterima pada restoran tertentu.
-- cuisine : merupakan jenis masakan yang disajikan pada restoran.
-- dst
+- Loan ID : merupakan id pinjaman,
+- Customer ID : merupakan id pelanggan.
+- Loan Status : merupakan status pinjaman.
+- Current Loan Amount : jumlah pinjaman saat ini.
+- Term : jangka waktu pembayaran pinjaman.
+- Credit Score : merupakan kredit score dari peminjam.
+- Annual Income : pendapatan tahunan peminjam.
+- Years in current job : lama peminjam bekerja pada pekerjaan saat ini.
+- Home Ownership : Status kepemilikan rumah peminjam.
+- Purpose : tujuan pengajuan pinjaman.
+- Monthly Debt : jumlah hutang bulanan peminjam.
+- Years of Credit History : lamanya seorang peminjam memiliki riwayat kredit yang tercatat dalam catatan kredit.
+- Months since last delinquent : jumlah bulan sejak terakhir kali seorang peminjam mengalami keterlambatan pembayaran (delinquent) dalam kewajiban keuangannya.
+- Number of Open Accounts : jumlah total akun atau rekening keuangan yang aktif yang dimiliki oleh seorang peminjam pada saat tertentu.
+- Number of Credit Problems : jumlah masalah kredit atau catatan negatif yang terkait dengan seorang peminjam dalam riwayat kredit mereka.
+- Current Credit Balance : saldo total yang harus dibayar oleh seorang peminjam pada saat tertentu dalam hubungannya dengan rekening kredit mereka. Ini mencakup jumlah utang yang masih harus dilunasi pada kartu kredit, pinjaman, atau jenis rekening kredit lainnya.
+- Maximum Open Credit : jumlah maksimum kredit yang disetujui atau tersedia untuk seorang peminjam pada saat tertentu. Ini mencerminkan batas maksimum yang diberikan oleh lembaga keuangan kepada peminjam untuk digunakan dalam bentuk pinjaman, kartu kredit, atau jenis rekening kredit lainnya.
+- Bankruptcies : jumlah kebangkrutan yang dilaporkan oleh seorang peminjam dalam riwayat kredit mereka. Kebangkrutan mengacu pada situasi di mana individu atau perusahaan tidak mampu membayar utang mereka dan secara resmi dinyatakan pailit oleh pengadilan.
+- Tax Liens : jumlah liabilitas pajak yang belum dibayar yang dimiliki oleh seorang peminjam. Liabilitas pajak dapat timbul ketika individu atau perusahaan gagal membayar pajak yang terutang kepada pihak berwenang, seperti pemerintah lokal atau badan pajak.
 
 **Rubrik/Kriteria Tambahan (Opsional)**:
 
-- Melakukan beberapa tahapan yang diperlukan untuk memahami data, contohnya teknik visualisasi data atau exploratory data analysis.
+## Univariate Analisys
+
+### Categorical
+
+![Loan Status](https://github.com/aliftech/predictive-analisys/blob/master/image/loan-status.png)
+
+![Term](https://github.com/aliftech/predictive-analisys/blob/master/image/term.png)
+
+![Home Ownwrship](https://github.com/aliftech/predictive-analisys/blob/master/image/home-ownership.png)
+
+### Numerical
+
+![Numerical Univariate](https://github.com/aliftech/predictive-analisys/blob/master/image/numerical-univariate.png)
+
+## Multivariate Analisys
 
 ## Data Preparation
 
