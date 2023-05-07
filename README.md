@@ -113,9 +113,33 @@ Dataset yang digunakan merupakan dataset Bank Loan Status yang diperoleh dari si
 
 ## Multivariate Analisys
 
+### Categorical
+
+![Loan Status](https://github.com/aliftech/predictive-analisys/blob/master/image/multivariate-loan-status.png)
+
+![Term](https://github.com/aliftech/predictive-analisys/blob/master/image/multivariate-term.png)
+
+![Home Ownwrship](https://github.com/aliftech/predictive-analisys/blob/master/image/multivarate-home-ownership.png)
+
+### Numerical
+
+![Numerical Multivariate](https://github.com/aliftech/predictive-analisys/blob/master/image/multivariate-numerical.png)
+
+![Matrix Correlation](https://github.com/aliftech/predictive-analisys/blob/master/image/matrix-correlation.png)
+
 ## Data Preparation
 
-Pada bagian ini Anda menerapkan dan menyebutkan teknik data preparation yang dilakukan. Teknik yang digunakan pada notebook dan laporan harus berurutan.
+**One Hot Encoding**
+
+One hot encoding adalah teknik mengubah data kategorik menjadi data numerik dimana setiap kategori menjadi kolom baru dengan nilai 0 atau 1. Fitur yang akan diubah menjadi numerik pada proyek ini adalah Loan Status, Term, dan Home Ownweship.
+
+**Train Test Split**
+
+Train test split aja proses membagi data menjadi data latih dan data uji. Data latih akan digunakan untuk membangun model, sedangkan data uji akan digunakan untuk menguji performa model. Pada proyek ini dataset sebesar 57142 dibagi menjadi 45713 untuk data latih dan 11429 untuk data uji.
+
+**Normalization**
+
+Algoritma machine learning akan memiliki performa lebih baik dan bekerja lebih cepat jika dimodelkan dengan data seragam yang memiliki skala relatif sama. Salah satu teknik normalisasi yang digunakan pada proyek ini adalah Standarisasi dengan sklearn.preprocessing.StandardScaler.
 
 **Rubrik/Kriteria Tambahan (Opsional)**:
 
@@ -124,32 +148,40 @@ Pada bagian ini Anda menerapkan dan menyebutkan teknik data preparation yang dil
 
 ## Modeling
 
-Tahapan ini membahas mengenai model machine learning yang digunakan untuk menyelesaikan permasalahan. Anda perlu menjelaskan tahapan dan parameter yang digunakan pada proses pemodelan.
+Pada penelitian ini, kami menggunakan tiga algoritma pemodelan, yaitu K-Nearest Neighbour (K-NN), Random Forest, dan AdaBoost. Berikut ini adalah penjelasan tentang setiap algoritma dan parameter yang digunakan dalam proyek ini:
 
-**Rubrik/Kriteria Tambahan (Opsional)**:
+**K-Nearest Neighbour (K-NN):**
 
-- Menjelaskan kelebihan dan kekurangan dari setiap algoritma yang digunakan.
-- Jika menggunakan satu algoritma pada solution statement, lakukan proses improvement terhadap model dengan hyperparameter tuning. **Jelaskan proses improvement yang dilakukan**.
-- Jika menggunakan dua atau lebih algoritma pada solution statement, maka pilih model terbaik sebagai solusi. **Jelaskan mengapa memilih model tersebut sebagai model terbaik**.
+Algoritma K-Nearest Neighbour bekerja dengan membandingkan jarak antara sampel yang akan diprediksi dengan sampel pelatihan yang ada. Jumlah tetangga terdekat (k) yang dipilih akan mempengaruhi prediksi.
+Pada proyek ini, kami menggunakan sklearn.neighbors.KNeighborsRegressor untuk membangun model K-NN. Kami menggunakan X_train dan y_train sebagai input untuk membangun model.
+Parameter yang digunakan dalam proyek ini adalah n_neighbors, yang merupakan jumlah tetangga terdekat yang akan dipertimbangkan.
+
+**Random Forest:**
+
+Algoritma Random Forest adalah teknik ensemble learning yang membangun banyak decision tree secara paralel pada waktu pelatihan.
+Pada proyek ini, kami menggunakan sklearn.ensemble.RandomForestRegressor untuk membangun model Random Forest. Kami menggunakan X_train dan y_train sebagai input untuk membangun model.
+Beberapa parameter yang digunakan dalam proyek ini adalah n_estimators, yang merupakan jumlah maksimum estimator atau decision tree dalam ensemble, max_depth, yang menentukan kedalaman maksimum setiap tree, dan random_state, yang mengontrol seed acak yang diberikan pada setiap base_estimator pada setiap iterasi boosting.
+
+**AdaBoost:**
+
+Algoritma AdaBoost (Adaptive Boosting) adalah teknik ensemble learning yang secara adaptif meningkatkan performa prediksi dengan menggabungkan beberapa model sederhana secara berurutan.
+Pada proyek ini, kami menggunakan sklearn.ensemble.AdaBoostRegressor untuk membangun model AdaBoost. Kami menggunakan X_train dan y_train sebagai input untuk membangun model.
+Beberapa parameter yang digunakan dalam proyek ini adalah n_estimators, yang merupakan jumlah maksimum estimator atau weak learners yang akan digunakan dalam ensemble, learning_rate, yang memperkuat kontribusi setiap regressor, dan random_state, yang mengontrol seed acak yang diberikan pada setiap base_estimator pada setiap iterasi boosting.
+Dengan menggunakan tiga algoritma tersebut dan parameter yang sesuai, penelitian ini bertujuan untuk membangun model prediktif yang akurat untuk memprediksi status pinjaman dengan menggunakan metode machine learning.
 
 ## Evaluation
 
-Pada bagian ini anda perlu menyebutkan metrik evaluasi yang digunakan. Lalu anda perlu menjelaskan hasil proyek berdasarkan metrik evaluasi yang digunakan.
+Metrik evaluasi yang digunakan pada proyek ini adalah akurasi dan mean squared error (MSE). Akurasi menentukan tingkat kemiripan antara hasil prediksi dengan nilai yang sebenarnya (y_test). Mean squared error (MSE) mengukur error dalam model statistik dengan cara menghitung rata-rata error dari kuadrat hasil aktual dikurang hasil prediksi. Berikut formulan MSE :
 
-Sebagai contoh, Anda memiih kasus klasifikasi dan menggunakan metrik **akurasi, precision, recall, dan F1 score**. Jelaskan mengenai beberapa hal berikut:
+<div><img src="https://user-images.githubusercontent.com/107544829/188412654-f5dc0ae1-901b-470e-aae5-1f6b5fb68b4d.png" width="300"/></div>
 
-- Penjelasan mengenai metrik yang digunakan
-- Menjelaskan hasil proyek berdasarkan metrik evaluasi
+Berikut hasil evaluasi pada proyek ini :
 
-Ingatlah, metrik evaluasi yang digunakan harus sesuai dengan konteks data, problem statement, dan solusi yang diinginkan.
+- Akurasi
+  | model | accuracy |
+  |----------|----------|
+  | knn | 148405.2 |
+  | boosting | 118354.3 |
+  | rf | 128170.4 |
 
-**Rubrik/Kriteria Tambahan (Opsional)**:
-
-- Menjelaskan formula metrik dan bagaimana metrik tersebut bekerja.
-
-**---Ini adalah bagian akhir laporan---**
-
-_Catatan:_
-
-- _Anda dapat menambahkan gambar, kode, atau tabel ke dalam laporan jika diperlukan. Temukan caranya pada contoh dokumen markdown di situs editor [Dillinger](https://dillinger.io/), [Github Guides: Mastering markdown](https://guides.github.com/features/mastering-markdown/), atau sumber lain di internet. Semangat!_
-- Jika terdapat penjelasan yang harus menyertakan code snippet, tuliskan dengan sewajarnya. Tidak perlu menuliskan keseluruhan kode project, cukup bagian yang ingin dijelaskan saja.
+<div><img src="https://github.com/aliftech/predictive-analisys/blob/master/image/evaluation.png"/></div>
