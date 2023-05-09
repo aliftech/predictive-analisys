@@ -14,9 +14,9 @@ Proyek ini dibabgun untuk perusahaan dengan karakteristik bisnis sebagai berikut
 
 Beberapa tantangan yang perlu dipecahkan dalam masalah ini termasuk:
 
-- Kompleksitas faktor-faktor penentu: Pengambilan keputusan kredit yang akurat memerlukan pemahaman mendalam tentang faktor-faktor yang mempengaruhi kemampuan seseorang untuk membayar kembali pinjaman. Faktor seperti riwayat kredit, pendapatan, riwayat pekerjaan, aset, dan variabel lainnya harus dianalisis dengan cermat untuk membuat prediksi yang akurat.
+- Fitur apa yang paling berpengaruh dalam pengambilan keputusan pemberian pinjaman ?
 
-- Risiko kredit: Salah satu risiko utama yang dihadapi oleh bank adalah gagal bayar pinjaman. Mengidentifikasi aplikasi yang berpotensi berisiko tinggi dan mengurangi risiko kredit menjadi sangat penting untuk menjaga stabilitas keuangan bank.
+- Bagaimana cara memproses data supaya bisa dilatih dengan baik ?
 
 ### Goals
 
