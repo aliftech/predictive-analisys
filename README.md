@@ -128,4 +128,4 @@ Berikut hasil evaluasi pada proyek ini :
   | boosting | 118354.3 |
   | rf | 128170.4 |
 
-<div><img src="https://github.com/aliftech/predictive-analisys/blob/master/image/evaluation.png"/></div>
+![evaluation](https://user-images.githubusercontent.com/47414125/236987636-a52bdf10-6850-49e7-a3f5-253d413c42a3.png)
